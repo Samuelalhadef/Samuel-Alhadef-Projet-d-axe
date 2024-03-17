@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription - Échange de cartes Harry Potter</title>
+    <link rel="stylesheet" href="assets/css/formulaire.css" />
+  </head>
+
+  <body>
+    <body>
+    <img
+      id="imagefond"
+      src="assets/img/Poudlard-scaled.jpg"
+      alt="image font poudlard"
+    />
+    <header>
+      <div class="contenu">
+        <nav id="nav">
+          <img
+            id="logosite"
+            src="assets/img/Harry logo.png"
+            alt="logo site harry potter"
+          />
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="collection.html">collection</a></li>
+            <li><a href="booster.html">booster</a></li>
+            <li><a href="#">inscription</a></li>
+          </ul>
+          <div id="icons"></div>
+        </nav>
+        <!--ici on va se mettre notre navigation avec notre darkmode-->
+      </div>
+    </header>
+    <div class="container">
+      <h2>Inscription - Échange de cartes Harry Potter</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="securityCode">Code de sécurité :</label>
+          <input
+            type="password"
+            id="securityCode"
+            name="securityCode"
+            minlength="6"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="username">Identifiant :</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            minlength="5"
+            maxlength="20"
+            required
+          />
+        </div>
+        <button type="submit">S'inscrire</button>
+      </form>
+    </div>
+    <script src="assets/js/formulaire.js"></script>
+  </body>
+</html>
